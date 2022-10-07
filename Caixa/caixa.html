@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="caixa.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Recursive:wght@900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="icon_wolf_hipermercado.png" />
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	<title>Hipermercado WOLF</title>
+</head>
+<body>
+	<section id="base">
+		<div class="baseSecundaria">
+			<div class="baseConteudo">
+				<div class="blocoConteudo">
+					<img class="imgProduto" src="wolfImage.png">
+				</div>
+			</div>
+			<div class="baseConteudo">
+				<div id="digitaCodigo">
+					<div id="codigo">
+						<input type="text" id="entradaCodigo" maxlength="13" placeholder="Código de barras">
+					</div>
+					<div id="quantidade">
+						<input type="number" id="entradaQuantidade" min="1" max="99" value="1" placeholder="Quantidade">
+					</div>
+				</div>
+				<div id="baseComandos">
+					<div class="btnComando">
+						<div class="btn">
+							<div class="btn-ilustracao">Q</div>
+						</div>
+						<div class="btn-funcao">REGISTRAR PRODUTO</div>
+					</div>
+					<div class="btnComando">
+						<div class="btn">
+							<div class="btn-ilustracao">W</div>
+						</div>
+						<div class="btn-funcao">CANCELAR PROCESSO</div>
+					</div>
+					<div class="btnComando">
+						<div class="btn">
+							<div class="btn-ilustracao">E</div>
+						</div>
+						<div class="btn-funcao">CADASTRAR NOVO PRODUTO</div>
+					</div>
+					<div class="btnComando">
+						<div class="btn">
+							<div class="btn-ilustracao">R</div>
+						</div>
+						<div class="btn-funcao">FINALIZAR COMPRA</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="baseSecundaria">
+			<div class="baseConteudo">
+				<div class="blocoConteudo">
+					<div class="infoTabela desc title">Descrição do produto</div>
+					<div class="infoTabela desc" id="descProduto"></div>
+					<div id="precos">
+						<div class="infoPrecos title">Preço varejo</div>
+						<div class="infoPrecos" id="precoVarejoTable"></div>
+						<div class="infoPrecos title">Preço atacado</div>
+						<div class="infoPrecos" id="precoAtacadoTable"></div>
+					</div>
+					<div class="infoTabela title">Quantidade em estoque</div>
+					<div class="infoTabela" id="quantidadeProduto"></div>
+					<div class="infoTabela title">Promoção</div>
+					<div class="infoTabela" id="promocaoProduto"></div>
+				</div>
+			</div>
+			<div class="baseConteudo">
+				<div class="blocoConteudo">
+					<div class="itemAdquirido">
+						<div id="nmrItem"></div>
+						<div id="descItem"></div>
+						<div id="quantItem"></div>
+						<div id="precoItem"></div>
+						<div id="ttlItem"></div>
+					</div>
+				</div>
+				<div id="totalFinal">Total R$ 0,00</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="sessaoPagamento">
+		<div class="info-btn-selecionar-forma">
+			<div class="btn-selecionar-forma"><i class="fas fa-arrow-left"></i></div>
+			<div class="btn-selecionar-forma" style="border-right: 1px dotted black; border-left: 1px dotted black;"><i class="far fa-check-circle"></i></div>
+			<div class="btn-selecionar-forma"><i class="fas fa-arrow-right"></i></div>
+			<div class="btn-selecionar-forma">4</div>
+			<div class="btn-selecionar-forma" style="border-right: 1px dotted black; border-left: 1px dotted black;">5</div>
+			<div class="btn-selecionar-forma">6</div>
+		</div>
+		<div id="base-finalizar-compra">
+			<div id="titulo-finalizar-compra">FORMA DE PAGAMENTO</div>
+			<div id="base-opcoes-finalizar-compra">
+				<div class="opcoes-finalizar-compra cdc">
+					<div class="titulo-forma-pagamento">Cartão de crédito</div>
+					<img src="forma_c_c.png" alt="Forma de pagamento - ">
+				</div>
+				<div class="opcoes-finalizar-compra cdd">
+					<div class="titulo-forma-pagamento">Cartão de débito</div>
+					<img src="forma_c_d.png" alt="Forma de pagamento - ">
+				</div>
+				<div class="opcoes-finalizar-compra dnr">
+					<div class="titulo-forma-pagamento">Dinheiro</div>
+					<img src="forma_dinheiro.png" alt="Forma de pagamento - ">
+				</div>
+			</div>
+		</div>
+	</section>
+<script type="text/javascript" src="caixa.js"></script>
+</body>
+</html>
